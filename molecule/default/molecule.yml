@@ -2,13 +2,12 @@
 dependency:
   name: galaxy
 driver:
-  name: delegated
+  name: docker
 platforms:
   - name: test_role
+    image: quay.io/centos/centos:stream8
+    pre_build_image: true
 provisioner:
   name: ansible
-  inventory:
-    links:
-      hosts: inventory
 verifier:
   name: testinfra
