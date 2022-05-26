@@ -13,7 +13,7 @@ addons:
 
 install:
   # Install ansible
-  - pip install ansible==2.10 molecule pytest-testinfra
+  - pip install ansible molecule pytest-testinfra
   
   # Check ansible version
   - molecule --version
