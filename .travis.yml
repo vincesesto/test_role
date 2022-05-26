@@ -12,8 +12,9 @@ addons:
     - python3-pip
 
 install:
-  # Install ansible
+  # Install applications needed
   - pip3 install ansible==2.10 molecule[docker] pytest-testinfra
+  - ansible-galaxy collection install community.docker
   
   # Check ansible version
   - molecule --version
