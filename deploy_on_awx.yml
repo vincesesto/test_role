@@ -1,0 +1,7 @@
+---
+- name: Deploy Sample
+  hosts: all
+  tasks:
+    - name: Deploy From AWX Ansible Tower
+      debug:
+        msg: "This Role Has Been Deployed By AWX Ansible Tower"
